@@ -7,14 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer">
-    </script>
-    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
-    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -159,28 +154,24 @@
         </section>
         <section class="sec2 section02">
             <h3>Nice One Sonny, Nice One Son</h3>
-            <p>GENTLEMONSTER <br> X <br> SON 7</p>
+            <p data-aos="fade-up" data-aos-duration="3000" class="hv">GENTLEMONSTER <br> X <br> SON 7</p>
+            <div class="son">
+                <video class="main-video"
+                    poster="https://web-resource.gentlemonster.com/assets/stories/son7/video/main/pc/poster.jpg"
+                    playsinline="" autoplay="" muted="" loop="" style="width: auto; height: 100%;">
+                    <source src="https://web-resource.gentlemonster.com/assets/stories/son7/video/main/pc/source.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
             <div class="sec2_le">
-                <div class="son_v">
-                    <a href="#"></a>
-                </div>
-                <div class="son">
-                    <video id="" class="media__asset media__asset--video"
-                        poster="https://web-resource.gentlemonster.com/assets/stories/son7/image/package/special_package2.webp"
-                        playsinline="" autoplay="" muted="" loop="" preload="none">
-                        <source
-                            src="https://web-resource.gentlemonster.com/assets/stories/son7/video/package/special_package2.mp4"
-                            type="video/mp4">
-                    </video>
+                <div data-aos="fade-right" data-aos-duration="3000" class="son_v">
                     <a href="#"></a>
                 </div>
             </div>
             <div class="sec2_ri">
-                <div class="son_s">
-                    <a href="#"></a>
+                <div data-aos="fade-left" data-aos-duration="3000" class="son_s">
                 </div>
-                <div class="son_p">
-                    <a href="#"></a>
+                <div data-aos="fade-up-left" data-aos-duration="3000" class="son_p">
                 </div>
             </div>
         </section>
@@ -228,7 +219,7 @@
                 </video>
             </div>
             <div class="sec4_ri">
-                <div class="dosan"><img src="./img/dosan.webp" alt=""></div>
+                <div class="dosan"><img id="tilt" src="./img/dosan.webp" alt=""></div>
                 <div class="dosan1"><img src="./img/dosan1.jpg" alt=""></div>
                 <div class="dosan2"><img src="./img/dosan2.jpg" alt=""></div>
                 <p>이전에 없던 젠틀몬스터만의 세계관 <br>
@@ -240,6 +231,9 @@
             <div class="sec5_le">
                 <p>온라인 프로덕트 서비스</p>
                 <span>언제 어디서나 고객님을 위한 젠틀몬스터 서비스를 만나보세요</span>
+                <a class="effect effect-5" href="#">접수하기</a>
+                <a class="effect effect-5" href="#">예약 확인하기</a>
+                <a class="effect effect-5" href="#">근처 매장찾기</a>
             </div>
             <div class="sec5_vd">
                 <video class="pc-video" playsinline="" autoplay="" muted="" loop=""
@@ -249,6 +243,16 @@
             </div>
         </section>
     </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer">
+    </script>
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="main.js" defer></script>
 </body>
 
 </html>

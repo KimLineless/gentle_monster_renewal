@@ -1,4 +1,16 @@
+// aos
+AOS.init();
 // header
+let header = document.querySelector('header');
+const headerHeight = header.getBoundingClientRect().height;
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > headerHeight) {
+    header.setAttribute('style', 'background: rgba(255, 255, 255, 0.9);');
+  } else {
+    header.setAttribute('style', 'background:rgba(255, 255, 255, 0.3);');
+  }
+});
 
 // nav
 
@@ -37,6 +49,20 @@ $('.ham').click(function () {
   $('.gnb').toggleClass('on');
 });
 
+// fullpage
+gsap.registerPlugin(ScrollTrigger);
+gsap.utils.toArray('section').forEach((section, i) => {
+  ScrollTrigger.create({
+    trigger: section,
+    start: 'top top',
+    pin: true,
+    pinSpacing: false,
+  });
+});
+ScrollTrigger.create({
+  snap: 1 / 4,
+});
+
 // sec1 slide(swiper)
 
 let swiper = new Swiper('.mySwiper', {
@@ -53,24 +79,54 @@ let swiper = new Swiper('.mySwiper', {
   },
 });
 
-// hover
+// sec1_card_hover
 
 $('.hover').mouseleave(function () {
   $(this).removeClass('hover');
 });
 
-// fullpage
-gsap.registerPlugin(ScrollTrigger);
-gsap.utils.toArray('section').forEach((section, i) => {
-  ScrollTrigger.create({
-    trigger: section,
-    start: 'top top',
-    pin: true,
-    pinSpacing: false,
-  });
+// sec2_txt_hover
+document.querySelector('.hv').addEventListener('mouseover', () => {
+  document.querySelector('.son').classList.add('on');
 });
-ScrollTrigger.create({
-  snap: 1 / 4,
+document.querySelector('.hv').addEventListener('mouseleave', () => {
+  document.querySelector('.son').classList.remove('on');
 });
 
-// sec4
+// sec3 img hover
+let el = document.getElementById('tilt');
+
+const height = el.clientHeight;
+const width = el.clientWidth;
+
+el.addEventListener('mousemove', handleMove);
+
+function handleMove(e) {
+  const xVal = e.layerX;
+  const yVal = e.layerY;
+
+  const yRotation = 20 * ((xVal - width / 2) / width);
+
+  const xRotation = -20 * ((yVal - height / 2) / height);
+
+  const string =
+    'perspective(500px) scale(1.1) rotateX(' +
+    xRotation +
+    'deg) rotateY(' +
+    yRotation +
+    'deg)';
+
+  el.style.transform = string;
+}
+
+el.addEventListener('mouseout', function () {
+  el.style.transform = 'perspective(500px) scale(1) rotateX(0) rotateY(0)';
+});
+
+el.addEventListener('mousedown', function () {
+  el.style.transform = 'perspective(500px) scale(0.9) rotateX(0) rotateY(0)';
+});
+
+el.addEventListener('mouseup', function () {
+  el.style.transform = 'perspective(500px) scale(1.1) rotateX(0) rotateY(0)';
+});
