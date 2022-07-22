@@ -1,0 +1,254 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer">
+    </script>
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="hd">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166 15.9">
+                    <path
+                        d="M7.3 5.3V4.1c0-1.3-.6-1.9-2.1-1.9-1.6 0-2.2.6-2.2 1.9v7.7c0 1.3.5 1.9 2.1 1.9 1.5 0 2.2-1 2.2-2.5V9.4H4.8V7.2h5.5v8.5H7.7v-1.2c-.5.7-1.4 1.5-3.5 1.5C1.5 16 0 14.9 0 11.3V4.8C0 1.3 2.1 0 5.2 0c3 0 5.1 1.4 5.1 4.1v1.2h-3zm14.9-5v2.3h-6v3.9h5.4v2.2h-5.4v4.7h6v2.3h-9V.3h9zm13.5 0v15.3H32L28 3.9v11.7h-3V.3h3.7l4 11.6V.3h3zm12.5 0v2.3h-3.8v13.1h-3V2.6h-3.8V.3h10.6zm4.9 13.1H59v2.3h-8.9V.3h3v13.1zM69.9.3v2.3h-6v3.9h5.4v2.2h-5.4v4.7h6v2.3h-9V.3h9zM91 .3v15.3h-3V3.9l-2.6 11.8H83L80.5 3.8v11.9h-3V.3h4.2L84.2 12 86.7.3H91zM104.1 5v5.9c0 3.7-1.8 5-5.1 5s-5.1-1.2-5.1-5V5c0-3.7 1.8-5 5.1-5s5.1 1.3 5.1 5zm-3-.7c0-1.6-.6-2.1-2.1-2.1-1.6 0-2.1.5-2.1 2.1v7.4c0 1.6.6 2 2.1 2 1.6 0 2.1-.5 2.1-2V4.3zm16.7-4v15.3h-3.7l-4-11.7v11.7h-3V.3h3.7l4 11.6V.3h3zm12.3 3.6v.9h-3V4c0-1.3-.2-1.8-1.7-1.8-1.4 0-1.7.6-1.7 1.6 0 .9.2 1.3 1 1.8l2.9 1.9c1.6 1 2.5 1.6 2.5 4.4 0 2.7-1.8 4-4.7 4-3.5 0-4.9-1.2-4.9-4v-1.3h3v1.1c0 1.6.5 2 1.9 2s1.7-.6 1.7-1.7-.2-1.5-1.2-2.2L123 7.9c-1.8-1.2-2.4-1.8-2.4-4 0-1.9 1.1-3.8 4.7-3.8 3.7-.1 4.8 1.5 4.8 3.8M142.2.3v2.3h-3.8v13.1h-3V2.6h-3.8V.3h10.6zm10.9 0v2.3h-6v3.9h5.4v2.2h-5.4v4.7h6v2.3h-9V.3h9zm12.4 10.2v3.3c0 .8.2 1.5.6 1.9H163c-.3-.4-.5-1.1-.5-1.9v-3.3c0-1.2-.5-1.6-1.6-1.6h-2.1v6.8h-3V.3h5.5c4 0 4.5 2.2 4.5 4.3 0 1.7-.9 2.9-3.1 3.3 1.9.1 2.8 1.1 2.8 2.6zm-4.6-3.9c1.6 0 1.9-.7 1.9-2s-.2-2-1.9-2h-2.1v4h2.1z">
+                    </path>
+                </svg>
+            </div>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="#" class="nav-item">선글라스</a></li>
+                    <li><a href="#" class="nav-item">안경</a></li>
+                    <li><a href="#" class="nav-item">콜라보레이션</a></li>
+                    <li><a href="#" class="nav-item">스타일</a></li>
+                    <li><a href="#" class="nav-item">브랜드이슈</a></li>
+                    <li><a href="#" class="nav-item">수리서비스</a></li>
+                    <span class="nav-indicator"></span>
+                </ul>
+            </nav>
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="ham">
+                <span class="bar"></span>
+            </div>
+        </header>
+        <section class="sec1 section01">
+            <h2>
+                GENTLE MONSTER <br>
+                TAMBURINS <br>
+                NUDAKE
+            </h2>
+            <div class="swiper mySwiper">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide sec1_swiper">
+                        <figure class="snip1477">
+                            <video class="collections__video collections__video--0" autoplay="" loop="" muted=""
+                                playsinline=""
+                                poster="https://web-resource.gentlemonster.com/assets/stories/marine_serre/img/video_thumbnails/m1_rd_thumbnail.jpg">
+                                <source
+                                    src="https://web-resource.gentlemonster.com/assets/stories/marine_serre/video/product_turntable/m1_rd.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <div class="title">
+                                <div>
+                                    <h2>젠틀몬스터</h2>
+                                    <h4>구매하기</h4>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <p>젠틀몬스터 X 마린세르 협업 컬렉션</p>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                        <div class="swiper_con"></div>
+                        <div class="sec1_slide fir"></div>
+                    </li>
+                    <li class="swiper-slide sec1_swiper">
+                        <figure class="snip1477">
+                            <video class="collections__video collections__video--0" autoplay="" loop="" muted=""
+                                playsinline=""
+                                poster="https://web-resource.gentlemonster.com/assets/stories/marine_serre/img/video_thumbnails/m2_sv_thumbnail.jpg">
+                                <source
+                                    src="https://web-resource.gentlemonster.com/assets/stories/marine_serre/video/product_turntable/m2_sv.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <div class="title">
+                                <div>
+                                    <h2>젠틀몬스터</h2>
+                                    <h4>구매하기</h4>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <p>젠틀몬스터 X 마린세르 협업 컬렉션</p>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                        <div class="swiper_con"></div>
+                        <div class="sec1_slide sec"></div>
+                    </li>
+                    <li class="swiper-slide sec1_swiper">
+                        <figure class="snip1477">
+                            <video class="collections__video collections__video--0" autoplay="" loop="" muted=""
+                                playsinline=""
+                                poster="https://web-resource.gentlemonster.com/assets/stories/marine_serre/img/video_thumbnails/m1_bl-thumbnail.jpg">
+                                <source
+                                    src="https://web-resource.gentlemonster.com/assets/stories/marine_serre/video/product_turntable/m1_bl.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <div class="title">
+                                <div>
+                                    <h2>젠틀몬스터</h2>
+                                    <h4>구매하기</h4>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <p>젠틀몬스터 X 마린세르 협업 컬렉션</p>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                        <div class="swiper_con"></div>
+                        <div class="sec1_slide thi"></div>
+                    </li>
+                    <li class="swiper-slide sec1_swiper">
+                        <figure class="snip1477">
+                            <video class="collections__video collections__video--0" autoplay="" loop="" muted=""
+                                playsinline=""
+                                poster="https://web-resource.gentlemonster.com/assets/stories/marine_serre/img/video_thumbnails/m1_bk_thumbnail.jpg">
+                                <source
+                                    src="https://web-resource.gentlemonster.com/assets/stories/marine_serre/video/product_turntable/m1_bk.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <div class="title">
+                                <div>
+                                    <h2>젠틀몬스터</h2>
+                                    <h4>구매하기</h4>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <p>젠틀몬스터 X 마린세르 협업 컬렉션</p>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                        <div class="swiper_con"></div>
+                        <div class="sec1_slide for"></div>
+                    </li>
+                </ul>
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="con_body">
+                <div class="container">
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <span class="text">Scroll down</span>
+                </div>
+            </div>
+        </section>
+        <section class="sec2 section02">
+            <h3>Nice One Sonny, Nice One Son</h3>
+            <p>GENTLEMONSTER <br> X <br> SON 7</p>
+            <div class="sec2_le">
+                <div class="son_v">
+                    <a href="#"></a>
+                </div>
+                <div class="son">
+                    <video id="" class="media__asset media__asset--video"
+                        poster="https://web-resource.gentlemonster.com/assets/stories/son7/image/package/special_package2.webp"
+                        playsinline="" autoplay="" muted="" loop="" preload="none">
+                        <source
+                            src="https://web-resource.gentlemonster.com/assets/stories/son7/video/package/special_package2.mp4"
+                            type="video/mp4">
+                    </video>
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="sec2_ri">
+                <div class="son_s">
+                    <a href="#"></a>
+                </div>
+                <div class="son_p">
+                    <a href="#"></a>
+                </div>
+            </div>
+        </section>
+        <section class="sec3 section03">
+            <div class="inner">
+                <div class="sunglass">
+                    <a href="#"></a>
+                    <p>Sunglass</p>
+                    <div class="sun_img"><img src="./img/sunglass.webp" alt=""></div>
+                </div>
+                <div class="glass">
+                    <a href="#"></a>
+                    <p>Glasses</p>
+                    <div class="gla_img"><img src="./img/glass.jpg" alt=""></div>
+                </div>
+                <div class="img_move">
+                    <ul class="pro_list banner_wraper">
+                        <li class="img"><a href="#"></a><img src="./img/product01.png" alt=""></li>
+                        <li class="img"><a href="#"></a><img src="./img/product02.png" alt=""></li>
+                        <li class="img"><a href="#"></a><img src="./img/product03.png" alt=""></li>
+                        <li class="img"><a href="#"></a><img src="./img/product04.png" alt=""></li>
+                        <li class="img"><a href="#"></a><img src="./img/product05.png" alt=""></li>
+                        <li class="img"><a href="#"></a><img src="./img/product06.png" alt=""></li>
+                        <li class="img"><a href="#"></a><img src="./img/product07.png" alt=""></li>
+                        <li class="img"><a href="#"></a><img src="./img/product08.png" alt=""></li>
+                        <li class="img"><a href="#"></a><img src="./img/product09.png" alt=""></li>
+                        <li class="img"><a href="#"></a><img src="./img/product01.png" alt=""></li>
+                        <li class="img"><a href="#"></a><img src="./img/product02.png" alt=""></li>
+                        <li class="img"><a href="#"></a><img src="./img/product03.png" alt=""></li>
+                        <li class="img"><a href="#"></a><img src="./img/product04.png" alt=""></li>
+                        <li class="img"><a href="#"></a><img src="./img/product05.png" alt=""></li>
+                        <li class="img"><a href="#"></a><img src="./img/product06.png" alt=""></li>
+                        <li class="img"><a href="#"></a><img src="./img/product07.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="sec4 section04">
+            <div class="vd">
+                <video autoplay loop="" muted="" playsinline="" <source
+                    src="https://web-resource.gentlemonster.com/assets/stories/haus_dosan/videos/pc/2f_video_f.mp4"
+                    data-pc-src="/assets/stories/haus_dosan/videos/pc/2f_video_f.mp4"
+                    data-mobile-src="https://web-resource.gentlemonster.com/assets/stories/haus_dosan/videos/pc/2f_video_f.mp4"
+                    type="video/mp4">
+                </video>
+            </div>
+            <div class="sec4_ri">
+                <div class="dosan"><img src="./img/dosan.webp" alt=""></div>
+                <div class="dosan1"><img src="./img/dosan1.jpg" alt=""></div>
+                <div class="dosan2"><img src="./img/dosan2.jpg" alt=""></div>
+                <p>이전에 없던 젠틀몬스터만의 세계관 <br>
+                    HAUS DOSAN
+                </p>
+            </div>
+        </section>
+        <section class="sec5 section05">
+            <div class="sec5_le">
+                <p>온라인 프로덕트 서비스</p>
+                <span>언제 어디서나 고객님을 위한 젠틀몬스터 서비스를 만나보세요</span>
+            </div>
+            <div class="sec5_vd">
+                <video class="pc-video" playsinline="" autoplay="" muted="" loop=""
+                    poster="https://web-resource.gentlemonster.com/assets/img/productservice/func_web_1.jpg">
+                    <source src="https://web-resource.gentlemonster.com/assets/video/productservice/func_web_1.mp4">
+                </video>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
