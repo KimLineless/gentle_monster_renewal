@@ -1,5 +1,4 @@
-// aos
-AOS.init();
+
 // header
 let header = document.querySelector('header');
 const headerHeight = header.getBoundingClientRect().height;
