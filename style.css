@@ -30,10 +30,6 @@
   --font-micro: 1rem;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
 .inner {
   max-width: 1740px;
   width: 100%;
@@ -256,6 +252,7 @@ svg {
   z-index: 100000;
   left: 135px;
   top: 80%;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -343,6 +340,7 @@ svg {
 
 /*  */
 .sec1 > h2 {
+  font-family: 'Roboto', sans-serif;  
   position: absolute;
   left: 100px;
   top: 50%;
@@ -601,6 +599,7 @@ figure.snip1477:hover h4 {
   background-color: var(--white-color);
   display: flex;
   justify-content: flex-start;
+  font-family: 'Roboto', sans-serif;
 }
 
 .sec2 > h3 {
